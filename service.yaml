@@ -4,6 +4,9 @@ team: team-platform
 description: Sample service for IDP E2E validation
 ci:
   autoCommitDev: true
+  promotion:
+    staging: commit
+    prod: pr
 port: 8080
 healthCheck:
   liveness: /healthz
